@@ -1,0 +1,25 @@
+@import '../../../styles/core/vars.scss';
+
+.inputDataWrapper {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.inputData {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 36px;
+}
+
+.labelInput {
+  width: 100px;
+}
+
+input {
+  width: 220px;
+}   
+
+@media (min-width: $minWidth) {
+  input {
+    width: 300px;
+  }     
+}

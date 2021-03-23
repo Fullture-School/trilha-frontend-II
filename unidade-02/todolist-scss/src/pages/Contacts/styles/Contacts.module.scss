@@ -1,0 +1,45 @@
+@import '../../../styles/core/vars.scss';
+
+@mixin btn() {
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    font-family: "Gochi Hand", cursive;
+    font-size: 30px;
+    margin-left: 100px;
+    height: 49px;
+    width: 130px;
+}
+
+.inputContactsWrapper {
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.inputContactList {
+    margin-top: 30px;  
+
+    > li {
+        margin-top: 30px;  
+
+        > p {
+            margin: 0;
+        }
+    }    
+}
+
+.btnSave {
+    @include btn();
+}
+
+@media (min-width: $minWidth) {    
+    .inputContactsWrapper {
+        margin: 100px auto ;
+        width: 36%;
+    }
+    
+    .btnSave {
+        font-size: 36px;
+        width: 130px;
+    }  
+}

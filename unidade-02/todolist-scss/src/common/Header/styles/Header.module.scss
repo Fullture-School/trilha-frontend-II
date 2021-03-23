@@ -1,0 +1,30 @@
+@import "../../../styles/core/vars.scss";
+
+.header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+        border: 1px solid $white;
+        cursor: pointer;
+        list-style: none;
+        padding: 5px;
+        
+        a {
+            color: $black;
+            display: flex;
+            text-decoration: none;
+
+
+            > div {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    li:hover {
+        border: 1px solid $black;
+    }
+}

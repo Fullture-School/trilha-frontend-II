@@ -1,0 +1,48 @@
+@import '../../../styles/core/vars.scss';
+
+.inputToDoList {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 100px;
+
+    input {
+        margin-left: 10px;
+    }
+}
+
+.listToDoList {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+}    
+
+.btnSave {
+    background-color: $black;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
+    margin-left: 105px;
+    height: 49px;
+    width: 130px;
+}
+
+@media (min-width: $minWidth) {
+    .inputToDoList {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .listToDoList {
+        margin: auto; 
+        width: 36%;
+    }    
+
+    .btnSave {
+        cursor: pointer;
+        height: 49px;
+        width: 130px;
+    }    
+}

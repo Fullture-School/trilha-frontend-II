@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header li {
+    border: 1px solid #fff;
+    cursor: pointer;
+    list-style: none;
+    padding: 5px;
+}
+
+.header li a {
+    color: #000;
+    display: flex;
+    text-decoration: none;
+}
+
+.header li a > div {
+    margin-top: 20px;
+}
+
+.header li:hover {
+    border: 1px solid #000;
+}
